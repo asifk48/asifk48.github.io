@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mohammad Asif Khan, Data Analyst skilled in Python, SQL, Power BI, Tableau, and Machine Learning. View projects, resume, and contact details.">
+  <title>Data Analyst Portfolio | Mohammad Asif Khan | Python, SQL, Power BI, Tableau</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Typewriter JS -->
+  <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: #111827;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .sticky-header.scrolled {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    .hover-tilt {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .hover-tilt:hover {
+      transform: scale(1.05) rotateY(2deg);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800" onload="window.scrollTo(0, 0)">
+
+  <!-- Navbar -->
+<header id="mainHeader" class="text-white py-5 md:sticky top-0 z-50 bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <h1 class="text-2xl font-bold mb-4 md:mb-0">Mohammad Asif Khan</h1>
+    
+    <!-- Mobile + Desktop layout -->
+    <nav class="flex flex-col md:flex-row w-full md:w-auto md:space-x-4">
+      
+      <!-- First line: About, Skills, Projects, Certifications -->
+      <div class="flex flex-row justify-center gap-4 overflow-x-auto no-scrollbar mb-2 md:mb-0">
+        <a href="#about" class="hover:text-gray-300">About</a>
+        <a href="#skills" class="hover:text-gray-300">Skills</a>
+        <a href="#projects" class="hover:text-gray-300">Projects</a>
+        <a href="#certifications" class="hover:text-gray-300">Certifications</a>
+      </div>
+      
+      <!-- Second line (mobile) | Continuation (desktop): Resume, Contact -->
+      <div class="flex flex-row justify-center gap-4 mt-2 md:mt-0">
+        <a href="#resume" class="hover:text-gray-300">Resume</a>
+        <a href="#contact" class="hover:text-gray-300">Contact</a>
+      </div>
+      
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 text-white text-center py-32 px-4" data-aos="fade-up">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I’m Mohammad Asif Khan</h1>
+    <h2 id="typewriter" class="text-xl md:text-2xl text-yellow-300 h-12"></h2>
+    <p class="mt-4 text-lg max-w-xl mx-auto">I specialize in transforming raw data into meaningful insights using Python, SQL, Tableau, Power BI, and Machine Learning.</p>
+    <a href="#contact" class="inline-block mt-6 px-6 py-3 bg-white text-black rounded hover:bg-gray-200 transition">Let’s Connect</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gradient-to-br from-gray-50 to-gray-200" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-1/3 mb-8 md:mb-0">
+        <img src="https://i.postimg.cc/tT00KQJd/me.jpg" alt="Profile" class="w-64 h-64 rounded-full mx-auto shadow-lg object-cover" />
+      </div>
+      <div class="w-full md:w-2/3 space-y-4">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <p>I hold a Bachelor's degree in Computer Science and specialize in transforming raw data into meaningful insights. With expertise in Python, SQL, Excel, Power BI, Tableau, and Machine Learning, I’ve delivered 30+ data projects and actively explore advanced analytics, EDA, and predictive modeling techniques. I am passionate about uncovering hidden patterns and presenting data-driven solutions to solve real-world problems efficiently. My approach combines clean coding practices with a strong understanding of business domains to drive impactful decisions and strategies.</p>
+        <div class="grid md:grid-cols-2 gap-4 mt-6 text-sm">
+          <div><strong>Profile:</strong> Data Science & Analytics</div>
+          <div><strong>Domain:</strong> Retail & Ecommerce</div>
+          <div><strong>Education:</strong> B.Sc. Computer Science</div>
+          <div><strong>Languages:</strong> English, Hindi, Urdu, Marathi</div>
+          <div><strong>BI Tools:</strong> Power BI, Tableau</div>
+          <div><strong>Other Tools:</strong> Git, Colab, MySQL, Excel</div>
+          <div><strong>Interest:</strong> Visualizations, Nature, Data Patterns</div>
+          <div><strong>Projects:</strong> 30+ Completed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="hover-tilt bg-indigo-100 p-6 rounded shadow">
+          <i class="fas fa-code text-indigo-600 text-3xl mb-3"></i>
+          <h3 class="text-xl font-semibold">Python</h3>
+          <p>Data cleaning, automation, ML scripting</p>
+        </div>
+        <div class="hover-tilt bg-yellow-100 p-6 rounded shadow">
+          <i class="fas fa-database text-yellow-600 text-3xl mb-3"></i>
+          <h3 class="text-xl font-semibold">SQL</h3>
+          <p>Joins, CTEs, subqueries, optimization</p>
+        </div>
+        <div class="hover-tilt bg-purple-100 p-6 rounded shadow">
+          <i class="fas fa-chart-bar text-purple-600 text-3xl mb-3"></i>
+          <h3 class="text-xl font-semibold">Power BI</h3>
+          <p>Reports, DAX, KPIs, slicers & cards</p>
+        </div>
+        <div class="hover-tilt bg-pink-100 p-6 rounded shadow">
+          <i class="fas fa-chart-line text-pink-600 text-3xl mb-3"></i>
+          <h3 class="text-xl font-semibold">Tableau</h3>
+          <p>Interactive dashboards & storytelling</p>
+        </div>
+        <div class="hover-tilt bg-green-100 p-6 rounded shadow">
+          <i class="fas fa-file-excel text-green-600 text-3xl mb-3"></i>
+          <h3 class="text-xl font-semibold">Excel</h3>
+          <p>Pivot Tables, Charts, Formulas</p>
+        </div>
+        <div class="hover-tilt bg-blue-100 p-6 rounded shadow">
+          <i class="fas fa-brain text-blue-600 text-3xl mb-3"></i>
+          <h3 class="text-xl font-semibold">Machine Learning</h3>
+          <p>Supervised & unsupervised learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-50" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- 1. Credit Scoring Model -->
+      <div class="hover-tilt bg-white p-6 rounded shadow">
+        <img src="https://i.postimg.cc/yYdyPqZq/Credit-Score.jpg" class="h-40 w-full object-cover rounded mb-4" />
+        <h3 class="font-semibold mb-1">Credit Scoring Model (Python ML)</h3>
+        <p class="text-sm text-gray-600 mb-2">Developed a ML model for credit risk classification with SHAP explainability.</p>
+        <p class="text-sm text-gray-600 mb-2">Performed EDA, preprocessing, and evaluation using precision, recall, ROC.</p>
+        <a href="https://github.com/asifk48/CodeAlpha_CreditScoringModel" class="text-blue-600 underline">View on GitHub</a>
+      </div>
+
+      <!-- 2. Electric Vehicle Dashboard -->
+      <div class="hover-tilt bg-white p-6 rounded shadow">
+        <img src="https://i.postimg.cc/qRw2sQBM/Electric-Vehicle.png" class="h-40 w-full object-cover rounded mb-4" />
+        <h3 class="font-semibold mb-1">Electric Vehicle Dashboard (Tableau)</h3>
+        <p class="text-sm text-gray-600 mb-2">Created an interactive Tableau dashboard analyzing EV sales and market trends.</p>
+        <p class="text-sm text-gray-600 mb-2">Visualized growth, market share, and segment performance effectively.</p>
+        <a href="https://public.tableau.com/views/Electric_Vehicle_Project_Dashboard/Dashboard1" class="text-blue-600 underline">View Dashboard</a>
+      </div>
+
+      <!-- 3. Credit Card Transaction Analysis -->
+      <div class="hover-tilt bg-white p-6 rounded shadow">
+        <img src="https://i.postimg.cc/mk8Rsksn/Credit-Card.png" class="h-40 w-full object-cover rounded mb-4" />
+        <h3 class="font-semibold mb-1">Credit Card Transaction Dashboard (Power BI)</h3>
+        <p class="text-sm text-gray-600 mb-2">Designed a Power BI dashboard for customer segmentation and transaction analysis.</p>
+        <p class="text-sm text-gray-600 mb-2">Included KPIs, card type trends, and top customer insights.</p>
+        <a href="https://github.com/asifk48/Credit-Card-Transaction-and-Customer-Analysis-Dashboard" class="text-blue-600 underline">View on GitHub</a>
+      </div>
+
+      <!-- 4. Amazon Sales Analysis -->
+      <div class="hover-tilt bg-white p-6 rounded shadow">
+        <img src="https://i.postimg.cc/BbwypKsJ/Amazon.webp" class="h-40 w-full object-cover rounded mb-4" />
+        <h3 class="font-semibold mb-1">Amazon Sales Analysis (Python)</h3>
+        <p class="text-sm text-gray-600 mb-2">Analyzed Amazon sales data to identify revenue patterns and product performance.</p>
+        <p class="text-sm text-gray-600 mb-2">Performed EDA using Pandas, NumPy, Seaborn with visual insights.</p>
+        <a href="https://github.com/asifk48/Amazon-Sales-Analysis" class="text-blue-600 underline">View on GitHub</a>
+      </div>
+
+      <!-- 5. Netflix SQL Analysis -->
+      <div class="hover-tilt bg-white p-6 rounded shadow">
+        <img src="https://i.postimg.cc/3xQ9TBtP/Netflix.png" class="h-40 w-full object-cover rounded mb-4" />
+        <h3 class="font-semibold mb-1">Netflix Analysis (SQL)</h3>
+        <p class="text-sm text-gray-600 mb-2">Performed SQL queries for data cleaning, joins, and deriving business insights.</p>
+        <p class="text-sm text-gray-600 mb-2">Analyzed show durations, ratings, release trends, and categories.</p>
+        <a href="https://github.com/asifk48/Netflix_SQL_Analysis" class="text-blue-600 underline">View on GitHub</a>
+      </div>
+
+      <!-- 6. E-commerce Sales Dashboard -->
+      <div class="hover-tilt bg-white p-6 rounded shadow">
+        <img src="https://i.postimg.cc/VLnpn5pP/Dashboard.png" class="h-40 w-full object-cover rounded mb-4" />
+        <h3 class="font-semibold mb-1">E-commerce Sales Dashboard (Excel)</h3>
+        <p class="text-sm text-gray-600 mb-2">Developed an Excel dashboard to analyze e-commerce sales, city-wise and category-wise.</p>
+        <p class="text-sm text-gray-600 mb-2">Used pivot tables and charts for dynamic insights and trends.</p>
+        <a href="https://github.com/asifk48/E-commerce-Sales-Performance-Dashboard" class="text-blue-600 underline">View on GitHub</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Certifications Section -->
+<section id="certifications" class="py-20 bg-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8 text-center">Certifications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- ✅ 1. Pillai College Certificate -->
+      <div class="hover-tilt bg-gray-100 p-6 rounded shadow">
+        <h3 class="text-lg font-semibold mb-2">Data Science Training – Pillai College</h3>
+        <p class="text-sm text-gray-600">30-hour certificate course</p>
+        <a href="https://drive.google.com/file/d/1jm-e8ioyomsvQgGSwmOYgY2HPD0mj-fT/view?usp=sharing" class="text-blue-600 underline mt-2 inline-block" target="_blank">View Certificate</a>
+      </div>
+
+      <!-- ✅ 2. The Complete Data Analyst Bootcamp – Udemy -->
+<div class="hover-tilt bg-gray-100 p-6 rounded shadow">
+  <h3 class="text-lg font-semibold mb-2">The Complete Data Analyst Bootcamp</h3>
+  <p class="text-sm text-gray-600">Issued by Udemy</p>
+  <a href="https://drive.google.com/file/d/10lSBFpMKwhaw82PSIlxYS3uOHpDlQnxU/view?usp=drive_link" class="text-blue-600 underline mt-2 inline-block" target="_blank">View Certificate</a>
+</div>
+
+
+      <!-- ✅ 3. Data Analytics & Visualization: Using Excel and Python – Udemy -->
+<div class="hover-tilt bg-gray-100 p-6 rounded shadow">
+  <h3 class="text-lg font-semibold mb-2">Data Analytics & Visualization: Using Excel and Python – Udemy</h3>
+  <p class="text-sm text-gray-600">Issued by Udemy</p>
+  <a href="https://drive.google.com/file/d/1sIbt7dA0T350WAPn72JTXEpLicEKgpv_/view?usp=sharing" target="_blank" class="text-blue-600 underline mt-2 inline-block">View Certificate</a>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Resume Section -->
+   <section id="resume" class="py-20 bg-gray-50 text-center" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-6">Resume</h2>
+    <p class="mb-4 text-gray-600">View or download my resume below</p>
+  
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+    <!-- View Resume Button -->
+    <a href="https://drive.google.com/file/d/1sbaIYRbdOX3mBaUG4nuFQe0Z2UaOUwF9/view?usp=sharing" target="_blank" class="inline-block bg-gray-800 text-white py-2 px-6 rounded hover:bg-gray-700 transition">
+      View Resume
+    </a>
+
+    <!-- Download Resume Button -->
+    <a href="https://drive.google.com/uc?export=download&id=1sbaIYRbdOX3mBaUG4nuFQe0Z2UaOUwF9" target="_blank" class="inline-block bg-green-600 text-white py-2 px-6 rounded hover:bg-green-500 transition">
+      Download Resume
+    </a>
+  </div>
+</section>
+  <!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+    <form action="https://formsubmit.co/40671f5b2e9b8c2b36ddc479df030bf2" method="POST" class="max-w-xl mx-auto">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="flex flex-col md:flex-row justify-center gap-4 mb-4">
+        <input type="text" name="name" placeholder="Your Name" required class="px-4 py-2 w-full md:w-64 rounded text-black" />
+        <input type="email" name="email" placeholder="Your Email" required class="px-4 py-2 w-full md:w-64 rounded text-black" />
+      </div>
+      <textarea name="message" placeholder="Your Message" required class="w-full p-4 rounded text-black h-32 mb-4"></textarea>
+      <button type="submit" class="bg-white text-gray-900 py-2 px-6 rounded hover:bg-gray-200 transition">Send</button>
+    </form>
+
+    <div class="mt-10 space-y-2 text-lg">
+      <p>📧 <strong>Email:</strong> <a href="mailto:md.asif5871@gmail.com" class="text-blue-400 hover:underline">md.asif5871@gmail.com</a></p>
+      <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mohammad-asif-khan-a3089a24a" class="text-blue-400 hover:underline" target="_blank">Click Here</a></p>
+      <p>💻 <strong>GitHub:</strong> <a href="https://github.com/asifk48" class="text-blue-400 hover:underline" target="_blank">Click Here</a></p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center text-gray-300 py-4">
+    © 2025 Mohammad Asif Khan. All rights reserved.
+    <br>
+  Designed & Built by Mohammad Asif Khan | Open to Opportunities
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    AOS.init({ duration: 800, once: true });
+    window.addEventListener("scroll", () => {
+      const header = document.getElementById("mainHeader");
+      header.classList.toggle("scrolled", window.scrollY > 10);
+    });
+
+    const typewriter = new Typewriter(document.getElementById('typewriter'), {
+      loop: true,
+      delay: 75,
+    });
+
+    typewriter
+      .typeString("Data Analyst | Python | SQL | Tableau | Power BI")
+      .pauseFor(2000)
+      .deleteAll()
+      .typeString("Turning Data into Insights 🔍📊")
+      .pauseFor(2000)
+      .start();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Ignore VS Code extensions and settings
+.vscode/
+git rm -r --cached .vscode
+git add .
+git commit -m "Removed vscode folder from tracking"
+git push
